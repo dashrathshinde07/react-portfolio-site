@@ -2,6 +2,7 @@ import React from "react";
 import "./Hero.css";
 import profiel_img from "../../assets/profile_img.svg";
 import AnchorLink from "react-anchor-link-smooth-scroll";
+import { FiDownload } from "react-icons/fi";
 
 const Hero = () => {
   return (
@@ -20,7 +21,10 @@ const Hero = () => {
             Connect with me
           </AnchorLink>
         </div>
-        <div className="hero-resume">My resume</div>
+        <div className="hero-resume">
+          My resume
+          <FiDownload className="download-resume" />
+        </div>
       </div>
     </div>
   );

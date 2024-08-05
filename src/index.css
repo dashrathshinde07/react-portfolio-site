@@ -1,10 +1,14 @@
+/* Global Reset */
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box; /* Ensures padding and border are included in element's total width and height */
 }
+
+/* Body Styles */
 body {
-  height: 100vh;
-  background: #161513;
-  color: white;
-  font-family: "outfit";
+  min-height: 100vh; /* Use min-height to ensure the body can grow if content is larger than the viewport */
+  background: #161513; /* Dark background color */
+  color: white; /* Text color */
+  font-family: "Outfit", sans-serif; /* Font declaration with fallback */
 }
