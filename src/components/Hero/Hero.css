@@ -60,3 +60,8 @@
 .hero-resume:hover {
   border-color: #b415ff;
 }
+
+.anchor-link {
+  text-decoration: none;
+  color: white;
+}
