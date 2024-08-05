@@ -117,3 +117,16 @@
   transform: scale(1.1);
   transition: 0.3s;
 }
+
+.email-notfication-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.email-notfication-container div {
+  position: absolute;
+  bottom: 20px;
+  font-size: 18px;
+  left: 20px;
+}
