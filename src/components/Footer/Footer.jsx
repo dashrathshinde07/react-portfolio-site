@@ -10,8 +10,8 @@ const Footer = () => {
         <div className="footer-top-left">
           <img src={footer_logo} alt="" />
           <p>
-            I am a frontend developer from, USA with 10 years of experience in
-            companies like Microsoft, Tesla and Apple.
+            "I’m a web developer with a year of hands-on experience, eager to
+            craft digital solutions and bring innovative ideas to life."
           </p>
         </div>
         <div className="footer-top-right">
@@ -26,7 +26,7 @@ const Footer = () => {
       <hr />
       <div className="footer-bottom">
         <p className="footer-bottom-left">
-          © 2023 Alex Bennett. All rights reserved.
+          © 2024 Dashrath Shinde. All rights reserved.
         </p>
         <div className="footer-bottom-right">
           <p>Term of Services</p>

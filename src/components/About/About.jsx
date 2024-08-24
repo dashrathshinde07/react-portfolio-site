@@ -1,7 +1,8 @@
 import React from "react";
 import "./About.css";
 import theme_pattern from "../../assets/theme_pattern.svg";
-import profile_img from "../../assets/about_profile.svg";
+
+import ds_about from "../../assets/ds_about.jpg";
 
 const About = () => {
   return (
@@ -12,25 +13,27 @@ const About = () => {
       </div>
       <div className="about-sections">
         <div className="about-left">
-          <img src={profile_img} alt="profileImg" />
+          <img src={ds_about} alt="profileImg" />
         </div>
         <div className="about-right">
           <div className="about-para">
             <p>
-              I am an experienced Frontend Developer with over a decade of
-              professional expertise in the field. Throughout my career, I have
-              had the privilege of collaborating with prestigious organizations,
-              contributing to their success and growth.
+              I’m a web developer specializing in the MERN stack with a year of
+              hands-on experience. I’ve had the chance to work on various
+              projects, refining my skills and delivering impactful solutions.
             </p>
             <p>
-              My passion for frontend development is not only reflected in my
-              extensive experience but also in the enthusiasm and dedication I
-              bring to each project.
+              My enthusiasm for web development shines through in every project,
+              where I focus on creating innovative and user-centric digital
+              experiences using MongoDB, Express, React, and Node.js.
             </p>
           </div>
           <div className="about-skills">
             <div className="about-skill">
               <p>HTML & CSS</p> <hr style={{ width: "50%" }} />
+            </div>
+            <div className="about-skill">
+              <p>Tailwind CSS</p> <hr style={{ width: "55%" }} />
             </div>
             <div className="about-skill">
               <p>React JS</p> <hr style={{ width: "70%" }} />
@@ -39,25 +42,31 @@ const About = () => {
               <p>JavaScript</p> <hr style={{ width: "60%" }} />
             </div>
             <div className="about-skill">
-              <p>Next JS</p> <hr style={{ width: "50%" }} />
+              <p>Node JS</p> <hr style={{ width: "55%" }} />
+            </div>
+            <div className="about-skill">
+              <p>Express JS</p> <hr style={{ width: "50%" }} />
+            </div>
+            <div className="about-skill">
+              <p> MongoDB</p> <hr style={{ width: "52%" }} />
             </div>
           </div>
         </div>
       </div>
       <div className="about-achievements">
         <div className="about-achievement">
-          <h1>10+</h1>
-          <p>YEARS OF EXPERIENCE</p>
+          <h1>1.5+</h1>
+          <p>YEAR OF IMMERSIVE EXPERIENCEE</p>
         </div>
         <hr />
         <div className="about-achievement">
-          <h1>90+</h1>
+          <h1>40+</h1>
           <p>PROJECTS COMPLETED</p>
         </div>
         <hr />
         <div className="about-achievement">
           <h1>15+</h1>
-          <p>HAPPY CLIENTS</p>
+          <p>ENDORSEMENTS</p>
         </div>
       </div>
     </div>

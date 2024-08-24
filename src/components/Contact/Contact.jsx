@@ -50,15 +50,15 @@ const Contact = () => {
           <div className="contact-details">
             <div className="contact-detail">
               <img src={mail_icon} alt="" />
-              <p>greatstackdev@gmail.com</p>
+              <p>dashrathbshinde@gmail.com</p>
             </div>
             <div className="contact-detail">
               <img src={call_icon} alt="" />
-              <p>+772-825-524</p>
+              <p>+91 8087828173</p>
             </div>
             <div className="contact-detail">
               <img src={location_icon} alt="" />
-              <p>CA, United States</p>
+              <p>Kallamb,Dharashiv,India</p>
             </div>
           </div>
         </div>
