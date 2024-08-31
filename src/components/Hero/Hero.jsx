@@ -3,7 +3,7 @@ import "./Hero.css";
 import coding_ninjas from "../../assets/coding_ninjas.jpg";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import { FiDownload } from "react-icons/fi";
-import resumeFile from "../../assets/samplepdf.pdf";
+import resumeFile from "../../assets/dashrath_shinde-frontend.pdf";
 
 const Hero = () => {
   // Function to handle resume download
