@@ -3,8 +3,18 @@ import "./Hero.css";
 import coding_ninjas from "../../assets/coding_ninjas.jpg";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import { FiDownload } from "react-icons/fi";
+import resumeFile from "../../assets/samplepdf.pdf";
 
 const Hero = () => {
+  // Function to handle resume download
+  const handleResumeDownload = () => {
+    const link = document.createElement("a");
+    link.href = resumeFile;
+    link.download = "Dashrath_Shinde_Resume.pdf"; // Name of the downloaded file
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
   return (
     <div id="home" className="hero">
       <img src={coding_ninjas} alt="profileImage" />
@@ -21,7 +31,7 @@ const Hero = () => {
             Connect with me
           </AnchorLink>
         </div>
-        <div className="hero-resume">
+        <div onClick={handleResumeDownload} className="hero-resume">
           My resume
           <FiDownload className="download-resume" />
         </div>
