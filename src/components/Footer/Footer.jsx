@@ -2,13 +2,19 @@ import React from "react";
 import "./Footer.css";
 import footer_logo from "../../assets/footer_logo.svg";
 import user_icon from "../../assets/user_icon.svg";
+import Logo from "../Logo/Logo";
+import FooterLogo from "../FooterLogo/FooterLogo";
 
 const Footer = () => {
   return (
     <div className="footer">
       <div className="footer-top">
         <div className="footer-top-left">
-          <img src={footer_logo} alt="" />
+          {/* <img src={footer_logo} alt="" /> */}
+          <div className="f-logo">
+            <FooterLogo />
+          </div>
+
           <p>
             "I’m a web developer with a year of hands-on experience, eager to
             craft digital solutions and bring innovative ideas to life."

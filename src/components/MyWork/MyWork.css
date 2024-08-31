@@ -68,7 +68,7 @@
   }
   .mywork-title h1 {
     padding: 0;
-    font-size: 50px;
+    font-size: 35px;
     font-weight: 600;
   }
   .mywork-title img {
@@ -77,7 +77,7 @@
   }
 
   .mywork-container {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 30px;
   }
 
@@ -93,3 +93,10 @@
     cursor: pointer;
   }
 }
+
+/* @media (min-width: 820px) {
+  .mywork-container{
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+} */

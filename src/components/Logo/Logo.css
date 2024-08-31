@@ -1,0 +1,28 @@
+/* Logo.css */
+.logo-container {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.logo-icon {
+  margin-right: 0.5rem;
+}
+
+.logo-text {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  background: linear-gradient(267deg, #da7c25 0.36%, #b923e1 102.06%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Optional: Add a hover effect */
+.logo-container:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}

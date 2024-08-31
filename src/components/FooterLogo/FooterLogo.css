@@ -1,0 +1,29 @@
+/* FooterLogo.css */
+.footer-logo-container {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    margin: 1rem; /* Adjust margin as needed */
+  }
+  
+  .footer-logo-icon {
+    margin-right: 0.5rem;
+  }
+  
+  .footer-logo-text {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 1.25rem; /* Slightly smaller size for the footer */
+    color: #fff; /* Text color to match the footer background */
+    background: linear-gradient(267deg, #da7c25 0.36%, #b923e1 102.06%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  /* Optional: Add a hover effect */
+  .footer-logo-container:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+  }
+  
