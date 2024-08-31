@@ -58,7 +58,7 @@ const Contact = () => {
             </div>
             <div className="contact-detail">
               <img src={location_icon} alt="" />
-              <p>Kallamb,Dharashiv,India</p>
+              <p>Kallamb in Dharashiv District, Maharashtra, India</p>
             </div>
           </div>
         </div>
