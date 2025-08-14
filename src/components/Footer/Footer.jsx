@@ -32,7 +32,7 @@ const Footer = () => {
       <hr />
       <div className="footer-bottom">
         <p className="footer-bottom-left">
-          © 2024 Dashrath Shinde. All rights reserved.
+          © 2025 Dashrath Shinde. All rights reserved.
         </p>
         <div className="footer-bottom-right">
           <p>Term of Services</p>
