@@ -2,38 +2,41 @@ import React from "react";
 import "./Hero.css";
 import coding_ninjas from "../../assets/coding_ninjas.jpg";
 import AnchorLink from "react-anchor-link-smooth-scroll";
-import { FiDownload } from "react-icons/fi";
-import resumeFile from "../../assets/dashrath_shinde-frontend.pdf";
 
 const Hero = () => {
-  // Function to handle resume download
-  const handleResumeDownload = () => {
-    const link = document.createElement("a");
-    link.href = resumeFile;
-    link.download = "Dashrath_Shinde_Resume.pdf"; // Name of the downloaded file
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
   return (
     <div id="home" className="hero">
       <img src={coding_ninjas} alt="profileImage" />
+
       <h1>
-        <span>I'm Dashrath Shinde,</span> Web developer based in India.
+        <span>I'm Dashrath Shinde,</span> Web Developer based in India.
       </h1>
-      <p>
-        "I’m a web developer with a year of hands-on experience, eager to craft
-        digital solutions and bring innovative ideas to life."
+
+      {/* New value proposition */}
+      <p className="hero-subtext">
+        Helping startups & businesses build <strong>fast</strong>,{" "}
+        <strong>scalable</strong>, and <strong>stunning</strong> web
+        applications that drive real results.
       </p>
+
+      <p>
+        I specialize in crafting digital solutions using the MERN stack,
+        focusing on speed, functionality, and user experience to help your
+        business grow.
+      </p>
+
       <div className="hero-action">
         <div className="hero-connect">
           <AnchorLink className="anchor-link" offset={50} href="#contact">
-            Connect with me
+            Hire Me
           </AnchorLink>
         </div>
-        <div onClick={handleResumeDownload} className="hero-resume">
-          My resume
-          <FiDownload className="download-resume" />
+
+        {/* Replaced Resume with Portfolio Button */}
+        <div className="hero-portfolio">
+          <AnchorLink className="anchor-link" offset={50} href="#work">
+            View Portfolio
+          </AnchorLink>
         </div>
       </div>
     </div>

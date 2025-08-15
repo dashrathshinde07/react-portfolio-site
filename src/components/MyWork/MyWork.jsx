@@ -11,21 +11,32 @@ const MyWork = () => {
         <h1>My Latest Work</h1>
         <img src={theme_pattern} alt="" />
       </div>
+
       <div className="mywork-container">
-        {mywork_data.map((work, index) => {
-          return (
-            <a
-              className="project-link"
-              href={work.w_link}
-              key={index}
-              target="_blank"
-              rel="noopener noreferrer"
+        {mywork_data.map((work, index) => (
+          <a
+            className={`project-link ${
+              work.status === "development" ? "disabled-link" : ""
+            }`}
+            href={work.status === "completed" ? work.w_link : "#"}
+            key={index}
+            target={work.status === "completed" ? "_blank" : "_self"}
+            rel="noopener noreferrer"
+          >
+            <div
+              className={`project-card ${
+                work.status === "development" ? "project-development" : ""
+              }`}
             >
               <img src={work.w_img} alt={work.w_name} />
-            </a>
-          );
-        })}
+              {work.status === "development" && (
+                <span className="project-badge">In Development</span>
+              )}
+            </div>
+          </a>
+        ))}
       </div>
+
       <div className="mywork-showmore">
         <p>Show More</p>
         <img src={arrow_icon} alt="" />

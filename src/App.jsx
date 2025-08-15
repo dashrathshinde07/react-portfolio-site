@@ -1,6 +1,7 @@
 // import React from 'react'
 
 import About from "./components/About/About";
+import ChatWidget from "./components/ChatWidget/ChatWidget";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 import Hero from "./components/Hero/Hero";
@@ -18,6 +19,7 @@ const App = () => {
       <MyWork />
       <Contact />
       <Footer />
+      <ChatWidget />
     </div>
   );
 };

@@ -1,20 +1,19 @@
 import React from "react";
 import "./Footer.css";
-import footer_logo from "../../assets/footer_logo.svg";
 import user_icon from "../../assets/user_icon.svg";
-import Logo from "../Logo/Logo";
 import FooterLogo from "../FooterLogo/FooterLogo";
+
+// Social media icons
+import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 const Footer = () => {
   return (
     <div className="footer">
       <div className="footer-top">
         <div className="footer-top-left">
-          {/* <img src={footer_logo} alt="" /> */}
           <div className="f-logo">
             <FooterLogo />
           </div>
-
           <p>
             "I’m a web developer with a year of hands-on experience, eager to
             craft digital solutions and bring innovative ideas to life."
@@ -35,9 +34,31 @@ const Footer = () => {
           © 2025 Dashrath Shinde. All rights reserved.
         </p>
         <div className="footer-bottom-right">
-          <p>Term of Services</p>
+          <p>Terms of Service</p>
           <p>Privacy Policy</p>
-          <p>Connect with me</p>
+          <div className="footer-socials">
+            <a
+              href="https://github.com/dashrathshinde07"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaGithub />
+            </a>
+            <a
+              href="https://www.instagram.com/dashrathshinde_/?hl=en"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaInstagram />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/dashrathshinde/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaLinkedin />
+            </a>
+          </div>
         </div>
       </div>
     </div>

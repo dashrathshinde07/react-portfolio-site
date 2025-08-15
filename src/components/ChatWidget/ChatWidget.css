@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+.chat-widget {
+  position: fixed;
+  bottom: 30px;
+  right: 100px;
+  z-index: 9999;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Chatbot Button */
+.chatbot-btn {
+  background: linear-gradient(135deg, #c23bb0, #ff7b00);
+  color: white;
+  padding: 14px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.35);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  animation: pulseAnimation 1.5s infinite;
+}
+.chatbot-btn:hover {
+  transform: scale(1.15) rotate(5deg);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.4);
+}
+
+/* Dropdown Menu */
+.chat-dropdown {
+  position: absolute;
+  bottom: 70px;
+  right: 0;
+  background: white;
+  border-radius: 14px;
+  overflow: hidden;
+  width: 240px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+  animation: fadeInUp 0.3s ease-in-out;
+}
+
+.dropdown-header {
+  background: linear-gradient(135deg, #c23bb0, #ff7b00);
+  color: white;
+  font-weight: 600;
+  padding: 12px 14px;
+  font-size: 15px;
+}
+
+.dropdown-item {
+  padding: 10px 14px;
+  border: none;
+  width: 100%;
+  text-align: left;
+  background: white;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background 0.2s ease;
+}
+.dropdown-item:hover {
+  background: #f5f5f5;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes pulseAnimation {
+  0% {
+    box-shadow: 0 0 0 0 rgba(194, 59, 176, 0.6);
+  }
+  70% {
+    box-shadow: 0 0 0 12px rgba(194, 59, 176, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(194, 59, 176, 0);
+  }
+}
